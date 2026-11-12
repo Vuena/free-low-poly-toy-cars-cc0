@@ -1,0 +1,6 @@
+no,vehicle,key,category,colourway,new_in_v3,triangles,width_m,height_m,length_m,wheel_nodes,file
+2,Muscle car,muscle,race / sport,blue,no,6664,1.91,1.354,3.64,"wheel_FL, wheel_FR, wheel_RL, wheel_RR",GLB/02_muscle/muscle_blue.glb
+9,Monster truck,monster,off-road,orange,no,7804,2.74,2.713,4.231,"wheel_FL, wheel_FR, wheel_RL, wheel_RR",GLB/09_monster/monster_orange.glb
+14,Police car,police,city,classic,no,5783,1.95,1.57,3.875,"wheel_FL, wheel_FR, wheel_RL, wheel_RR",GLB/14_police/police_classic.glb
+16,Ice cream van,icecream,city,pink,no,6300,2.442,2.88,3.72,"wheel_FL, wheel_FR, wheel_RL, wheel_RR",GLB/16_icecream/icecream_pink.glb
+18,Fire truck,fire,city,red,no,6388,2.265,2.01,4.35,"wheel_FL, wheel_FR, wheel_RL, wheel_RR",GLB/18_fire/fire_red.glb

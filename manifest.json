@@ -1,0 +1,97 @@
+[
+ {
+  "key": "muscle",
+  "colour": "blue",
+  "file": "02_muscle/muscle_blue.glb",
+  "tris": 6664,
+  "body_tris": 3688,
+  "wheel_tris": 744,
+  "size": [
+   1.91,
+   1.354,
+   3.64
+  ],
+  "new_in_v3": false,
+  "name": "Muscle car",
+  "category": "race / sport",
+  "wheel_nodes": "wheel_FL, wheel_FR, wheel_RL, wheel_RR",
+  "fbx": "02_muscle/muscle_blue.fbx",
+  "emissive_map": false
+ },
+ {
+  "key": "monster",
+  "colour": "orange",
+  "file": "09_monster/monster_orange.glb",
+  "tris": 7804,
+  "body_tris": 3996,
+  "wheel_tris": 952,
+  "size": [
+   2.74,
+   2.713,
+   4.231
+  ],
+  "new_in_v3": false,
+  "name": "Monster truck",
+  "category": "off-road",
+  "wheel_nodes": "wheel_FL, wheel_FR, wheel_RL, wheel_RR",
+  "fbx": "09_monster/monster_orange.fbx",
+  "emissive_map": false
+ },
+ {
+  "key": "police",
+  "colour": "classic",
+  "file": "14_police/police_classic.glb",
+  "tris": 5783,
+  "body_tris": 2695,
+  "wheel_tris": 772,
+  "size": [
+   1.95,
+   1.57,
+   3.875
+  ],
+  "new_in_v3": false,
+  "name": "Police car",
+  "category": "city",
+  "wheel_nodes": "wheel_FL, wheel_FR, wheel_RL, wheel_RR",
+  "fbx": "14_police/police_classic.fbx",
+  "emissive_map": false
+ },
+ {
+  "key": "icecream",
+  "colour": "pink",
+  "file": "16_icecream/icecream_pink.glb",
+  "tris": 6300,
+  "body_tris": 3212,
+  "wheel_tris": 772,
+  "size": [
+   2.442,
+   2.88,
+   3.72
+  ],
+  "new_in_v3": false,
+  "name": "Ice cream van",
+  "category": "city",
+  "wheel_nodes": "wheel_FL, wheel_FR, wheel_RL, wheel_RR",
+  "fbx": "16_icecream/icecream_pink.fbx",
+  "emissive_map": false
+ },
+ {
+  "key": "fire",
+  "colour": "red",
+  "file": "18_fire/fire_red.glb",
+  "tris": 6388,
+  "body_tris": 3236,
+  "wheel_tris": 788,
+  "size": [
+   2.265,
+   2.01,
+   4.35
+  ],
+  "new_in_v3": false,
+  "name": "Fire truck",
+  "category": "city",
+  "wheel_nodes": "wheel_FL, wheel_FR, wheel_RL, wheel_RR",
+  "fbx": "18_fire/fire_red.fbx",
+  "emissive_map": false
+ }
+]

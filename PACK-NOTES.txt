@@ -1,0 +1,43 @@
+5 Free Toy Cars (CC0)
+==========================================
+
+Free sample of the 50 Toy Cars pack (v3): muscle car, police car, fire truck, ice cream van, monster truck
+(one colourway each, GLB + FBX, the same files as in the paid pack). Licence: CC0 / public domain.
+
+FOLDERS
+  GLB/   glTF 2.0 binary.   FBX/   binary FBX with the palette texture embedded.
+  Each vehicle has its own folder with 1 colourway file(s), e.g. 02_muscle/muscle_blue.glb
+  Next to the files: <key>_<colour>_palette.png (base colour atlas), <key>_mr.png (metal/roughness).
+
+STRUCTURE OF EVERY FILE
+  <key>          root node, origin on the ground at the centre of the vehicle
+  <key>_body     the body, windows, lights, bumpers (one mesh)
+  wheel_*        every wheel is its own node. Node origin = wheel centre. Spin axis = the node's local X axis (left-right).
+                 Most vehicles: wheel_FL, wheel_FR, wheel_RL, wheel_RR (F = front, R = rear, L = left, R = right, seen from behind).
+                 3 axles (cement mixer, crane truck, tanker, toy tank, train engine, space rover): wheel_FL/FR, wheel_ML/MR (middle), wheel_RL/RR.
+                 Centre wheels: motorbike and scooter wheel_F + wheel_R; tuk-tuk wheel_F + wheel_RL/RR;
+                 road roller wheel_F is the steel drum; toy plane wheel_FL/FR + wheel_R (tail wheel).
+  propeller      toy plane only: origin on the hub, spin axis = the node's local Z axis (forward).
+  Material: ONE material per file ("toycar_palette", Blender may add .001 / .002) with a 64x64 palette texture (base colour)
+  and a metal/roughness map. Every colour is a flat cell of the palette, so you can recolour a vehicle by editing the PNG.
+  Vehicles 21-50 also have an emissive map in the GLB (head lights, tail lights, amber/blue beacons glow).
+  The FBX files have no emission (see HONEST NOTES); use the _emissive.png if your engine wants it.
+
+UNITS AND ORIENTATION
+  1 unit = 1 metre (chunky toy proportions, 2.0 - 5.5 m long in model space; scale them to taste)
+  Origin on the ground at the centre of the vehicle, front = +Z, up = +Y, left = +X (glTF convention)
+  In Blender: front = -Y after import (glTF importer), nothing to fix.
+  Vehicles 01-20 are byte-identical to version 2: same names, scale and pivots, so your existing scenes keep working.
+
+TRIANGLES
+  5,783 to 7,804 triangles per car. See vehicles.csv / manifest.json for every model.
+
+HONEST NOTES
+  - Models are low-poly and stylised; there is no interior, no steering rig and no suspension.
+  - Wheels (and the plane's propeller) are separate objects, but there is no skeleton or animation: you rotate them in code.
+  - Some details are fixed body parts: the mixer drum, the crane boom and the digger arms do not move.
+  - Only vehicles 21-50 have an emissive map; 01-20 are unchanged from v2 and have none.
+  - FBX: Blender's FBX exporter puts the base palette into the emission slot, so emission is switched off in the FBX files.
+  - Models were made procedurally by our own code with AI-assisted tooling, then exported to GLB and converted to FBX with Blender.
+  - Validated with the Khronos glTF-Validator: 0 errors, 0 warnings on all 150 GLB files. Not tested in every FBX importer.
+Support: hello@popyca.com
